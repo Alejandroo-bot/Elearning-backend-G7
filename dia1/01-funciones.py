@@ -49,3 +49,17 @@ def recibirAlumnos(clase, *alumnos):
     print(clase)
 
 recibirAlumnos('Eduardo','Juan', 'Jenny', 'Lily', 'Manuel')
+
+sumatoria = lambda numero1, numero2: numero1 + numero2
+respuesta = sumatoria(10,5)
+print(respuesta)
+
+def sumatoriaNumeros(numero1, *numeros):
+    respuesta = 0
+    for numero in numeros:
+        respuesta += numero
+    respuesta += numero1
+    return respuesta
+
+respuesta = sumatoriaNumeros(10,7,8,5)
+print (respuesta)
